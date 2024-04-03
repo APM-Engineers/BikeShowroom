@@ -1,18 +1,86 @@
-import { useState } from 'react'
-import { Canvas } from "@react-three/fiber"
-import { OrbitControls } from "@react-three/drei"
 import './App.css'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
 import Home from './pages/Home'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import Error from './pages/Error'
+import Model from './pages/Model'
+import Testdrive from './pages/Testdrive'
+import Contact from './components/Contact';
 import Navbar from './components/Navbar'
+import Bike from './pages/Bike';
+import Contactus from "./pages/Contactus"
+import Aboutus from "./pages/Aboutus"
+import Service from "./pages/Service"
+import "./index.css"
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    children: [
+      {
+        path: "",
+        element: <Home></Home>,
+      },
+      {
+        path: "model",
+        element: <Model></Model>,
+      },
+      {
+        path: "testdrive",
+        element: <Testdrive></Testdrive>,
+      },
+      {
+        path:"contactus",
+        element:<Contactus></Contactus>
+      },
+      {
+        path:"aboutus",
+        element:<Aboutus></Aboutus>
+      },
+      {
+        path:"service",
+        element:<Service></Service>
+      },
+
+      {
+        path: "/bike",
+        children: [{
+          path: ":bikeid",
+          element: <Bike></Bike>
+        }
+        ]
+      }]
+  },
+  {
+    path: "/login",
+    element: <Login></Login>
+  },
+  {
+    path: "/signup",
+    element: <Signup></Signup>
+  },
+  {
+    path: "*",
+    element: <div>Error</div>
+  }
+]);
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className='App' >
-    <Navbar></Navbar>
-    <Home></Home>
-    </div>
+    <>
+
+      <RouterProvider router={router} />
+      {/* <Contact></Contact> */}
+    </>
   )
 }
 
