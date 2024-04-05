@@ -2,6 +2,7 @@ import './App.css'
 
 import {
   createBrowserRouter,
+  Outlet,
   RouterProvider,
 } from "react-router-dom";
 
@@ -19,35 +20,41 @@ import Aboutus from "./pages/Aboutus"
 import Service from "./pages/Service"
 import "./index.css"
 
-
+function Layout() {
+  return <>
+    <Navbar></Navbar>
+    <Outlet></Outlet>
+  </>
+}
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Layout></Layout>,
     children: [
       {
-        path: "",
+        path: "/",
         element: <Home></Home>,
       },
       {
-        path: "model",
+        path: "/model",
         element: <Model></Model>,
       },
       {
-        path: "testdrive",
+        path: "/testdrive",
         element: <Testdrive></Testdrive>,
       },
       {
-        path:"contactus",
-        element:<Contactus></Contactus>
+        path: "/contactus",
+        element: <Contactus></Contactus>
       },
       {
-        path:"aboutus",
-        element:<Aboutus></Aboutus>
+        path: "/aboutus",
+        element: <Aboutus></Aboutus>
       },
       {
-        path:"service",
-        element:<Service></Service>
+        path: "/service",
+        element: <Service></Service>
       },
 
       {
