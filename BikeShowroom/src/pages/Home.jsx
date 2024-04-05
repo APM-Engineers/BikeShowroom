@@ -1,14 +1,18 @@
 import React from 'react'
 import Landing from '../components/Landing'
-import Navbar from '../components/Navbar'
+import Bikeslider from '../components/Bikeslider'
+import Shortcuts from '../components/Shortcuts'
+
 
 
 
 export default function Home() {
   return (
     <>
-    <Navbar></Navbar>
    <Landing></Landing>
+   <Shortcuts></Shortcuts>
+   <Bikeslider></Bikeslider>
+
     </>
 
   )

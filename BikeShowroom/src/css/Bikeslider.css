@@ -1,0 +1,26 @@
+/* Scrollbar */
+.Bikeslider::-webkit-scrollbar {
+    height: 7px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 20px; /* Adding or adjusting top margin */
+}
+
+/* Track */
+.Bikeslider::-webkit-scrollbar-track {
+    background: #d9d9de;
+    border-radius: 20px;
+}
+
+/* Handle */
+.Bikeslider::-webkit-scrollbar-thumb {
+    background: orangered;
+    border-radius: 20px;
+    transition: background-color 0.3s; /* Adding transition for smooth hover effect */
+}
+
+/* Handle on hover */
+.Bikeslider::-webkit-scrollbar-thumb:hover {
+    background: orangered;
+    transform: scale(1.2); /* Scaling the thumb on hover */
+}
