@@ -6,13 +6,13 @@ import Shortcuts from '../components/Shortcuts'
 
 
 
+
 export default function Home() {
   return (
     <>
    <Landing></Landing>
    <Shortcuts></Shortcuts>
    <Bikeslider></Bikeslider>
-
     </>
 
   )
