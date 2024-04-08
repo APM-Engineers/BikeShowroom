@@ -18,12 +18,14 @@ import Bike from './pages/Bike';
 import Contactus from "./pages/Contactus"
 import Aboutus from "./pages/Aboutus"
 import Service from "./pages/Service"
+import Footer from './components/Footer';
 import "./index.css"
 
 function Layout() {
   return <>
     <Navbar></Navbar>
     <Outlet></Outlet>
+    <Footer></Footer>
   </>
 }
 
