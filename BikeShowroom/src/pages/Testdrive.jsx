@@ -7,23 +7,23 @@ let testVechical = [
     listOfBike: [
       {
         name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        img: "/S1000rr.jpeg"
       },
       {
-        name: "Pulsar",
-        img: "/PulsarNS125.png"
+        name: "G310-RR",
+        img: "/G310RR.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "Ducati",
+        img: "/Ducati.webp"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "Duke 390",
+        img: "/Duke390.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "RC 390",
+        img: "/RC390.jpeg"
       }
     ]
   },
@@ -32,23 +32,23 @@ let testVechical = [
     listOfBike: [
       {
         name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        img: "/S1000rr.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "G310-RR",
+        img: "/G310RR.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "Ducati",
+        img: "/Ducati.webp"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "Duke 390",
+        img: "/Duke390.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "RC 390",
+        img: "/RC390.jpeg"
       }
     ]
   },
@@ -57,23 +57,23 @@ let testVechical = [
     listOfBike: [
       {
         name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        img: "/S1000rr.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "G310-RR",
+        img: "/G310RR.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "Ducati",
+        img: "/Ducati.webp"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "Duke 390",
+        img: "/Duke390.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "RC 390",
+        img: "/RC390.jpeg"
       }
     ]
   },
@@ -82,23 +82,23 @@ let testVechical = [
     listOfBike: [
       {
         name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        img: "/S1000rr.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "G310-RR",
+        img: "/G310RR.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "Ducati",
+        img: "/Ducati.webp"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "Duke 390",
+        img: "/Duke390.jpeg"
       },
       {
-        name: "S1000-RR",
-        img: "/PulsarNS125.png"
+        name: "RC 390",
+        img: "/RC390.jpeg"
       }
     ]
   },

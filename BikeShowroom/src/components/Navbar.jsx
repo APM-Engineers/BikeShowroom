@@ -8,10 +8,6 @@ let nav = [
         name: "Home",
     },
     {
-        path: "/service",
-        name: "Service",
-    },
-    {
         path: "/aboutus",
         name: "About",
     },
