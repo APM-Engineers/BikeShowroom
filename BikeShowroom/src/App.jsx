@@ -20,6 +20,7 @@ import Aboutus from "./pages/Aboutus"
 import Service from "./pages/Service"
 import Footer from './components/Footer';
 import "./index.css"
+import Build from './pages/Build';
 
 function Layout() {
   return <>
@@ -78,7 +79,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>Error</div>
+    element: <Build></Build>
   }
 ]);
 

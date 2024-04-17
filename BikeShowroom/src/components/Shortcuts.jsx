@@ -1,17 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 let logourl=[
   {
     logourl:"/bike.png",
-    name:"Models"
+    name:"Models",
+    link:"/model"
   },
   {
     logourl:"/helmet.png",
-    name:"Demo Ride"
+    name:"Demo Ride",
+    link:"/testdrive"
   },
   {
     logourl:"/bikebuild.png",
-    name:"Build Your Own"
+    name:"Build Your Own",
+    link:"/build"
   }
 ]
 
@@ -23,7 +27,7 @@ export default function Shortcuts() {
       {logourl.map((logo)=>(
         <div className=' flex justify-center items-center'> 
           <img src={logo.logourl} className=' w-[50px] h-[50px]'></img>
-          <span className=' ml-5'>{logo.name}</span>
+          <Link to={logo.link} className=' ml-5'>{logo.name}</Link>
          
         </div>
       ))}

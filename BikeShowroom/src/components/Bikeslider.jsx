@@ -4,24 +4,24 @@ import '../css/Bikeslider.css'
 
 let Sliderbikes=[
     {
-        imgurl:"/PulsarNS125.png",
-        Name:"Plusar"
+        imgurl:"/S1000rr.jpeg",
+        Name:"BMW S1000-RR"
     },
     {
-        imgurl:"/PulsarNS125.png",
-        Name:"Plusar"
+        imgurl:"/G310RR.jpeg",
+        Name:"BMW G310-RR"
     },
     {
-        imgurl:"/PulsarNS125.png",
-        Name:"Plusar"
+        imgurl:"/Duke390.jpeg",
+        Name:"Duke390"
     },
     {
-        imgurl:"/PulsarNS125.png",
-        Name:"Plusar"
+        imgurl:"/RC390.jpeg",
+        Name:"KTM RC390"
     },
     {
-        imgurl:"/PulsarNS125.png",
-        Name:"Plusar"
+        imgurl:"/Ducati.webp",
+        Name:"Ducati"
     },
     {
         imgurl:"/PulsarNS125.png",
