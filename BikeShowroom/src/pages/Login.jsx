@@ -3,13 +3,40 @@ import { Link, useNavigate } from 'react-router-dom'
 import "../css/Login.css"
 
 export default function Login() {
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const navigate = useNavigate();
     let handleSubmit = (event) => {
         event.preventDefault();
-        navigate('/');
+        fetch("http://localhost:3000/login", {
+            method: "POST", 
+            mode: "cors", 
+            cache: "no-cache", 
+            credentials: "same-origin", 
+            headers: {
+                "Content-Type": "application/json",
+                
+            },
+            redirect: "follow", 
+            referrerPolicy: "no-referrer", 
+            body: JSON.stringify({email: email, password: password }), 
+        }).then((res) => { return res.json() }).then((data) => {
+            if (data.status) {
+                console.log(data)
+                localStorage.setItem("user",JSON.stringify(data.user))
+                navigate('/');
+            }
+            else {
+                console.log(data)
+                alert("error"+data.msg)
+            }
+        })
+        
+        
+     
     };
+
     return (
         <div className="LoginWindow">
             <form className='LoginForm'>
